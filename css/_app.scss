@@ -1,0 +1,21 @@
+﻿/* System-wide stying. */
+body
+{
+    background-color: $backgroundColour;
+    color: $textColour;
+    margin: 10px;
+}
+
+.app-container {
+    margin-top: 60px;
+}
+
+img.comranger-logo {
+    width: 100%;
+    height: calc(40vh);
+}
+
+.spacing-20px
+{
+    height: 20px;
+}

@@ -1,0 +1,30 @@
+﻿.comranger-navbar {
+    .navbar-header {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    img.navbar-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar-brand {
+        &.page-title {
+            a {
+                color: $headerColour;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            padding-left: 0px;
+        }
+
+        &.current-user-details {
+            font-size: 14px;
+            padding-right: 10px;
+        }
+    }
+}
