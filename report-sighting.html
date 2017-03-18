@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ComRanger</title>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/google-maps-settings.js"></script>
+        <script src="js/report-sighting.js"></script>
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="comranger-navbar navbar navbar-default navbar-fixed-top">
+            <div>
+                <div class="navbar-header">
+                    <span class="navbar-brand">
+                        <a href="index.html">
+                            <img src="./images/logo.jpg" class="navbar-logo" />
+                        </a>
+                    </span>
+                    <span class="navbar-brand page-title">
+                        <a>
+                            Report Sighting
+                        </a>
+                    </span>
+                    <span class="pull-right navbar-brand current-user-details">
+                        Andrew Ling (<a>Logout</a>)
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div id="reportSighting" class="app-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input id="sightingName" type="text" class="form-control" placeholder="What did you find?" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <input id="sightingDate" type="date" class="form-control" />
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <input id="sightingTime" type="time" class="form-control" />
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <input id="sightingLocation" type="text" class="form-control" placeholder="Where did you find it?" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="sightingLocationMap"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <input id="attachmentUpload" type="file" class="form-control" multiple="multiple" />
+                </div>
+            </div>
+            <div class="row">
+                <div id="selectedAttachments" class="col-xs-12">
+                    File1.jpg <br />
+                    File2.jpg
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <textarea id="sightingNotes" type="text" class="form-control" placeholder="Enter some notes about this sighting. E.g: What did the sighting look like?"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <input id="emailAddress" type="email" class="form-control" placeholder="Enter your email address (optional)" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button id="reportSighting" class="btn btn-primary btn-block">Report</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCao_aYS5rj_fCyKzVsIUXu3EMknsbnBss&callback=configureMaps" async defer></script>
+</html>

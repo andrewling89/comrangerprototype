@@ -1,4 +1,8 @@
 ﻿/* System-wide stying. */
+html, body {
+    height: 100%
+}
+
 body
 {
     background-color: $backgroundColour;
@@ -8,6 +12,8 @@ body
 
 .app-container {
     margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 img.comranger-logo {

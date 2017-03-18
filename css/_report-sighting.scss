@@ -1,0 +1,13 @@
+#reportSighting {
+    div[class^='col'], div[class*=' col'] {
+        margin-bottom: 10px;
+    }
+
+    #sightingLocationMap {
+        height: 200px;
+    }
+
+    #sightingNotes {
+        height: 60px;
+    }
+}
