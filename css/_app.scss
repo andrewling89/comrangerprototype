@@ -25,3 +25,7 @@ img.comranger-logo {
 {
     height: 20px;
 }
+
+div[class^='col'], div[class*=' col'] {
+    margin-bottom: 10px;
+}

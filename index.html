@@ -6,6 +6,7 @@
 
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
 
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -39,6 +40,12 @@
                     <button class="btn btn-primary btn-block">Report Incident</button>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="sightingsMap"></div>
+                </div>
         </div>
     </body>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCao_aYS5rj_fCyKzVsIUXu3EMknsbnBss&callback=configureMaps" async defer></script>
 </html>
